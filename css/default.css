@@ -1,0 +1,130 @@
+@media all{
+	*{margin:0; padding:0; box-sizing:border-box; font-family: 'Nunito Sans', sans-serif; }
+	body, html{ font-size:14px; color:#050a16;}
+	ul, li{list-style:none;}
+	input, button, a, textarea{outline:0 none;}
+	.fL{float:left;}
+	.fR{float:right;}
+	.clearfix:after{content:''; clear:both; display:block; }
+	.textCenter{text-align:center;}
+	
+	.container{max-width:1050px; margin:0 auto;}
+	.section.headerSect { padding: 20px 0; }
+	.logo{width:179px; height:31px; background:url(../images/logo.png) no-repeat 0 0; display:block; text-indent: -999em;}
+	ul.nav{display:block; margin-top:7px;}
+	ul.nav > li { display: inline-block; padding: 0 10px; }
+	ul.nav > li > a { color: #050a16; text-decoration: none; }
+	
+	.section.heroSection { text-align: center; padding: 120px 0; background: #7b28b1 url(../images/hero-bg.png) no-repeat 0 0; background-size: cover; color: #fff; }
+	.section.heroSection h4 { font-size: 28px; color: #fff; font-weight: 300; }
+	.section.heroSection h2 { font-size: 44px; color: #fff; font-weight: 800; margin-top: 14px; }
+	ul.servicesList { padding: 20px 0 0; }
+	ul.servicesList > li { display: inline-block; }
+	ul.servicesList > li > a { display: block; padding: 20px 33px; text-decoration: none; background: #f2f2f2; margin: 0 4px; border-radius: 10px; font-weight: 700; color: #fff; position: relative; overflow:hidden;}
+	ul.servicesList > li > a:after { content: ''; position: absolute; width: 70px; height: 70px; background: rgba(0,0,0,0.1); left: -30px; top: 31px; border-radius: 100px; }
+	ul.servicesList > li > a.communities, .serviceContainer.communitiesSect:after { background: #18cde1; }
+	ul.servicesList > li > a.sites, .serviceContainer.sitesSect:after{ background: #5da5f6; }
+	ul.servicesList > li > a.integrations, .serviceContainer.integrationsSect:after { background: #c681f6; }
+	ul.servicesList > li > a.dataMigration, .serviceContainer.dataMigrationSect:after { background: #db61f2; }
+	ul.servicesList > li > a.lighting, .serviceContainer.lightingSect:after { background: #f74382; }
+	ul.servicesList > li > a.salesforceConfigurations,  .serviceContainer.salesforceConfigurationsSect:after { background: #fa9d59; }
+	
+	.section.servicesSection {padding-bottom: 80px;}
+	.serviceContainer { margin-top: 45px; padding: 75px 0; position:relative;}
+	.serviceContainer:after{content: ''; display: block; width: 79%; height: 100%; position: absolute; right: 0; border-radius: 10px; top:0;}
+	.serviceContainer.imgToRight:after{right:inherit; left:0;}
+	.serviceGrid { display: flex; position:relative; z-index:1; }
+	.seviceImgContainer { background: #fff; height: 340px; width: 42%; box-shadow: 1px 1px 5px rgba(0,0,0,0.5); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+	.serviceContent { width: 58%; padding:10px 50px; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center; color:#fff; }
+	.serviceContainer.imgToRight .serviceGrid { flex-direction: row-reverse; }
+	.serviceContent h2 { font-size: 25px; font-weight: 800; margin-bottom: 15px; }
+	.serviceContent p { margin-bottom: 15px; line-height: 24px; }
+	ul.checkList { margin-bottom: 15px; }
+	ul.checkList > li { display: block; padding: 4px 0 4px 30px; position: relative; font-weight: 700; background:url(../images/check.png) no-repeat 4px 8px; }
+	
+	.section.whyChooseSection { padding: 80px 0 100px; background: #9547ed; color: #fff; }
+	.section.whyChooseSection h2{font-size:34px; font-weight:700;}
+	.whyChooseBoxes { display: flex; flex-wrap: wrap; }
+	.whyChooseBox { width: 33.33%; text-align: center; margin-top: 50px; padding:90px 15px 0 15px; }
+	.whyChooseBox > h2 { font-size: 22px!important; }
+	.whyChooseBox p {color: #dde5ff; margin-top: 10px;}
+	.whyChooseBox.experience{ background:url(../images/experience.png) no-repeat center 10px;}
+	.whyChooseBox.team{ background:url(../images/salesforce-team.png) no-repeat center 0;}
+	.whyChooseBox.certificate{ background:url(../images/salesforce-certified-developers.png) no-repeat center 0;}
+	.whyChooseBox.budget{ background:url(../images/affordable.png) no-repeat center 0;}
+	.whyChooseBox.process{ background:url(../images/salesforce-processes.png) no-repeat center 0;}
+	
+	.section.testimonialSection { background: #9547ed; border-top: 1px solid #b377f7; padding: 80px 0; text-align: center; color: #fff; }
+	.testimonidalWrap { display: flex; max-width: 700px; margin: 0 auto; }
+	.testimonialPic { padding: 12px; background: #f8de4b; border-radius: 100%; }
+	.testimonialContent { padding-left: 40px; display: flex; flex-direction: column; justify-content: center; }
+	.testimonialContent h2 { font-size: 22px; margin-bottom: 15px; }
+	.testimonialContent h2 + p{margin-bottom:15px;}
+	.testimonialContent p { font-size: 16px; color: #dde5ff; }
+	.testimonialContent span.quote { position: absolute; color: #f8de4b; font-size: 52px!important; margin-left: -27px; margin-top: -13px; font-family: arial; }
+	.section.contactSection { padding: 80px 0; background: url(../images/map-bg.png) no-repeat; background-size: cover; }
+	
+	.contactDetails { display: flex; }
+	.address { width: 60%; }
+	.address h1 { font-size: 40px; font-weight: 800; line-height: 40px; margin-bottom: 25px; }
+	ul.contactList > li { margin-bottom: 12px; display: block; font-size: 18px; padding: 3px 0 3px 40px;}
+	li.location {background: url(../images/location-icon.png) no-repeat 0 4px;}
+	li.email {background: url(../images/email-icon.png) no-repeat 0 6px;}
+	li.phone {background: url(../images/phone-icon.png) no-repeat 0 6px;}
+	.contactForm { width: 40%; }
+	.contactForm .inputStyle { width: 100%; border: 1px solid #000000; height: 40px; border-radius: 8px; padding: 10px 11px; font-size:16px; }
+	.contactForm textarea.inputStyle{height:120px;}
+	.contactForm .inputDiv { padding-bottom: 15px; }
+	.contactForm h2 { font-size: 24px; font-weight: 800; margin-bottom: 15px; }
+	button.submitBtn { background: linear-gradient(90deg, rgba(65,92,237,1) 0%, rgba(209,23,245,1) 100%); color: #fff; border: 0 none; padding: 11px 30px; border-radius: 34px; font-weight: 600; cursor: pointer; }
+	
+	.section.footerSection { background: #0a122d; padding: 90px 0;}
+	ul.foolterLinks{display:block;}
+	ul.foolterLinks > li { display: inline-block; padding: 0 10px; }
+	ul.foolterLinks > li > a { color: #d7d7d7; text-decoration: none; }
+	ul.socialLinks  > li { display: inline-block; padding: 0 2px; }
+	ul.socialLinks  > li > a {display:block; width:30px; height:30px; background:url(../images/social-icons.png) no-repeat; text-decoration: none; text-indent:-999em; }
+	ul.socialLinks  > li > a.fb{background-position: -75px 0;}
+	ul.socialLinks  > li > a.fb:hover{background-position: -75px -30px;}
+	ul.socialLinks > li > a.twitter { background-position: 0 0; }
+	ul.socialLinks > li > a.twitter:hover { background-position: 0 -30px; }
+	ul.socialLinks  > li > a.linkedin{background-position: -37px 0;}
+	ul.socialLinks  > li > a.linkedin:hover{background-position: -37px -30px;}
+	.footerLogo {display:block; width:213px; height:43px; background:url(../images/footer-logo.png) no-repeat; text-decoration: none; margin-left:40px; }
+	
+}
+
+@media screen and (max-width:1024px){
+	.container { max-width: 100%; padding: 0 25px; }
+	ul.servicesList > li > a{padding:20px 27px;}
+}
+@media screen and (max-width:768px){
+	.container { max-width: 100%; padding: 0 15px; }
+	ul.servicesList > li > a{padding:15px 27px;}
+	.serviceGrid { display: block;}
+	.serviceContainer:after { width: 100%;}
+	.seviceImgContainer { height: inherit; width: 100%; text-align: center; padding: 45px 0; border-radius: 10px 10px 0 0; box-shadow:0 0 2px rgba(0, 0, 0, 0.3);}
+	.serviceContainer { padding: 0;}
+	ul.servicesList {text-align: center;}
+	.serviceContent { width: 100%; padding:45px;}
+	ul.servicesList > li { display: inline-block; width: 49%; margin-bottom: 12px; }
+	.whyChooseBox{width:100%;}
+	.testimonidalWrap { display: block;}
+	.testimonialPic { display: inline-block; margin-bottom: 20px; }
+	.address { width: 100%; }
+	.address br { display: none; }
+	.contactForm { width: 100%; margin-top: 30px; }
+	.contactDetails { display: block; max-width: 480px; margin: 0 auto; }
+	ul.foolterLinks.fL { float: none; text-align: center; }
+	.footerLogo.fR { float: none; margin: 30px auto; }
+	ul.socialLinks.fR { float: none; text-align: center; }
+	.seviceImgContainer img { max-width: 100%; }
+	
+}
+@media screen and (max-width:650px){
+	ul.nav { display: block; margin-top: 20px; }
+	ul.servicesList > li { width: 100%;}
+	.section.heroSection { padding: 80px 0;}
+	.section.heroSection h2 { font-size: 34px;}
+	.section.heroSection h4 { font-size: 22px;}
+}
