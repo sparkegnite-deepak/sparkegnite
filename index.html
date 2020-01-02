@@ -258,7 +258,7 @@
 
 							<div class="inputDiv textCenter">
 								<!--<input type="submit" name="submit" class="submitBtn">-->
-								<button type="submit" class="submitBtn">Submit</button>
+								<button type="submit" onclick="validateEmail()" class="submitBtn">Submit</button>
 							</div>
 							
 						</form>
@@ -283,6 +283,21 @@
 			</div>
 		</div>	
 		
-		
 	</body>
 </html>
+<script type='text/javascript'>
+	
+	function validateEmail(){
+		
+		var email = document.getElementById('email').value;
+		var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
+
+		if(email.length == 0){
+			email.innerHTML = "Please enter email";
+		}
+		if(!email.value.match(mailformat)){
+			email.innerHTML = "Please enter valid email";
+		}
+	}
+	
+</script>
