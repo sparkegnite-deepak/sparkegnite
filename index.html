@@ -290,6 +290,7 @@
 	function validateEmail(){
 		
 		var email = document.getElementById('email').value;
+		console.log("validate email "+email);
 		var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
 
 		if(email.length == 0){
