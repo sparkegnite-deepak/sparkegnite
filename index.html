@@ -238,7 +238,7 @@
 							
 							<div class="inputDiv">
 								<!--label for="email">Email</label>-->
-								<input class="inputStyle" placeholder="Email" id="email" maxlength="80" name="email" size="20" type="text"/><br>
+								<input class="inputStyle" placeholder="Email" id="email" maxlength="80" name="email" size="20" type="text" required/><br>
 							</div>
 								
 							<div class="inputDiv">
@@ -293,12 +293,13 @@
 		console.log("validate email "+email);
 		var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
 
-		if(email.length == 0){
+		/*if(email.length == 0){
 			email.innerHTML = "Please enter email";
 			return false;
-		}
+		}*/
 		if(!email.value.match(mailformat)){
 			email.innerHTML = "Please enter valid email";
+			console.log("Invalid Email");
 			return false;
 		}
 	}
