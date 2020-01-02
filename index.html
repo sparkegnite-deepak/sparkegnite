@@ -219,7 +219,7 @@
 							</div>
 						</form>	-->
 						
-						<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+						<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="return validateEmail()">
 
 							<input type=hidden name="oid" value="00D2w000001fgjc">
 							<input type=hidden name="retURL" value="http://www.sparkegnite.com">
@@ -285,7 +285,7 @@
 		
 	</body>
 </html>
-<script type='text/javascript'>
+<script>
 	
 	function validateEmail(){
 		
@@ -294,9 +294,11 @@
 
 		if(email.length == 0){
 			email.innerHTML = "Please enter email";
+			return false;
 		}
 		if(!email.value.match(mailformat)){
 			email.innerHTML = "Please enter valid email";
+			return false;
 		}
 	}
 	
