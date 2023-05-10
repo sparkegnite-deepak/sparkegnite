@@ -1,6 +1,6 @@
 @media all{
 	*{margin:0; padding:0; box-sizing:border-box; font-family: 'Nunito Sans', sans-serif; }
-	body, html{ font-size:14px; color:#050a16;}
+	body, html{ font-size:13px; color:#050a16;}
 	ul, li{list-style:none;}
 	input, button, a, textarea{outline:0 none;}
 	.fL{float:left;}
